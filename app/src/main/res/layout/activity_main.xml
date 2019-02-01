@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <SurfaceView
+        android:id="@+id/sv_live_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <Button
+            android:id="@+id/btn_live_switch_camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/switch_camera"
+            android:onClick="switchCamera"/>
+        <Button
+            android:id="@+id/btn_live_start_live"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/start_live"
+            android:onClick="startLive"/>
+        <Button
+            android:id="@+id/btn_live_stop_live"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/stop_live"
+            android:onClick="stopLive"/>
+    </LinearLayout>
+</FrameLayout>
